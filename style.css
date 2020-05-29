@@ -36,11 +36,21 @@ header li {
 		transform: scale(1.2);
 		cursor: pointer;
 		}
+		img{
+			position: relative;
+			bottom: : 50px;
+			left: 140px;
+			z-index: -1;
+		}
 /*Class for herader handling */
 .logo{
 	float: left;
+	margin: 0px;
+
+	z-index: -1;
 	/*border: 2px solid red;*/
 }
+
 .Home{
 	float: right;
 	position: relative;
@@ -60,8 +70,9 @@ form{
 	text-align: center;
 
 }
-button:active{
+	button:active:hover:focus{
 	border: none;
+	cursor: pointer;
 }
 
 .form{
@@ -73,28 +84,48 @@ button:active{
 	color: white;
 	padding: 8px;
 	border-radius: 15px;
-	transition: : width 1s;
 	display: inline-block;
-
+	border: none;
+ 	box-shadow: 10px 10px grey;
+	transition: 1s;
 }
-// .form button:hover{
-// 	width: 40%;
-
-// }
-.form input:active{
+ .form button:hover{
+ 	transform: scale(1.1);
+ 	border:none;
+ }
+ .form button:active{
+ 	border: none;
+ }
+  .form button:focus{
+ 	border: none;
+ }
+.form input:active:focus:hover{
 background-color: skyblue;
-border: white;
+	border: none;
+ 	box-shadow: 10px 10px grey;
+
 }
 input{
 	text-align:center;
-	margin: 0;
+	display: inline-block;
+	margin: 30px;
+	transition: 1s;
+	box-shadow: 2px 3px grey;
+
 }
+
 /*response from java Script*/
 #script{
 	text-align: center;
 	display: block;
 	color: white;
 	position: relative;
-	bottom: 200px;
-	left: -20px;
+	bottom: 250px;
+	
+	text-shadow: 2px 1px #ff0000;
+}
+#script{
+	transition: 1.2s;
+	transition-delay: 2s;
+	transform: scale(1.1);
 }
