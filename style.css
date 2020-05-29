@@ -1,0 +1,100 @@
+*{
+	margin: 0px;
+	font-family: 'Balsamiq Sans', cursive;
+	}
+	body{
+		background-color: #fe8a71;
+
+	}
+header{
+	background-color: #3da4ab;
+	position: relative;
+	padding: 10px;
+
+
+}
+header:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+ul{
+	list-style-type: none;
+	color:white;
+	
+	
+}
+
+header li {
+	display: inline-block;
+	padding: 10px;	
+	text-decoration: underline;
+	opacity: 1;
+	transition: 0.2s;
+	}
+	header li:hover{
+		transform: scale(1.2);
+		cursor: pointer;
+		}
+/*Class for herader handling */
+.logo{
+	float: left;
+	/*border: 2px solid red;*/
+}
+.Home{
+	float: right;
+	position: relative;
+	left: -160px;
+	display: inline-block;
+}
+.body{
+	position: fixed;
+	width: 100%;
+}
+.text{
+	color: white;
+	font-size: 17px;
+}
+/*For Form field*/
+form{
+	text-align: center;
+
+}
+button:active{
+	border: none;
+}
+
+.form{
+	display: inline-block;
+	margin: 250px auto;
+}
+.form button{
+	background-color: #e84a5f;
+	color: white;
+	padding: 8px;
+	border-radius: 15px;
+	transition: : width 1s;
+	display: inline-block;
+
+}
+// .form button:hover{
+// 	width: 40%;
+
+// }
+.form input:active{
+background-color: skyblue;
+border: white;
+}
+input{
+	text-align:center;
+	margin: 0;
+}
+/*response from java Script*/
+#script{
+	text-align: center;
+	display: block;
+	color: white;
+	position: relative;
+	bottom: 200px;
+	left: -20px;
+}
