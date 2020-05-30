@@ -6,9 +6,18 @@ const input = document.getElementById("input")
 console.dir(input)
 	input.addEventListener("change" || "keydown", (event)=>{
 	let name =  event.target.value
-	console.log(name)
 	let num = Math.floor(Math.random() * 6);
-	body.innerHTML =(`${name} lucky day is :  ${weekday[num]}`)
+	let e = name.toLowerCase()
+	if ( e.length === 0 ){
+		alert("Name please")
+	}else {
+	if ( e ==='bipasha'){
+	body.innerHTML =(`${name} ,your lucky day is : ${weekday[num]} and ---
+	 Deep says Hey Honey, how are you  .....`)
+	}else {
+	body.innerHTML =(`${name},your lucky day is :  ${weekday[num]}`)
+}
+}
 });
 	var weekday = new Array(7);
 weekday[0] = "Sunday";
